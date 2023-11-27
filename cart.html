@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cart</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="images/LOGO.png" width="100px"></a>
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="account.html">Account</a></li>
+                </ul>
+            </nav>
+            <a href="cart.html"><img src="images/cart.png" width="30px" height="30px"></a>
+            <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+    </div>
+    <!-- cart items details -->
+    <div class="small-container cart-page">
+        <table>
+            <tr>
+                <th>Product</th>
+                <th>Quanty</th>
+                <th>Subtotal</th>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="images/lebaran.png" alt="">
+                        <div>
+                            <p>KUE LEBARAN</p>
+                            <small>price: Rp 50.000</small>
+                            <br>
+                            <a href="">remove</a>
+
+                        </div>
+                    </div>
+
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>RP. 50.000</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="images/17-removebg-preview.png" alt="">
+                        <div>
+                            <p>KUE ULANG TAHUN</p>
+                            <small>price: Rp 100.000</small>
+                            <br>
+                            <a href="">remove</a>
+
+                        </div>
+                    </div>
+
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>RP. 100.000</td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="cart-info">
+                        <img src="images/bronies.jpeg" alt="">
+                        <div>
+                            <p>BROWNIES LUMER</p>
+                            <small>price: Rp 35.000</small>
+                            <br>
+                            <a href="">remove</a>
+
+                        </div>
+                    </div>
+
+                </td>
+                <td><input type="number" value="1"></td>
+                <td>RP. 35.000</td>
+            </tr>
+        </table>
+        <div class="total-price">
+            <table>
+                <tr>
+                    <td>subtotal</td>
+                    <td>Rp.185.000</td>
+                </tr>
+                <tr>
+                    <td>Tax</td>
+                    <td>Rp.5.000</td>
+                </tr>
+                <tr>
+                    <td>Total</td>
+                    <td>Rp.190.000</td>
+                </tr>
+            </table>
+        </div>
+
+    </div>
+
+
+
+    <!-- footer -->
+    <div class="footer">
+        <div class="info">
+            <div class="row-3">
+                <div class="footer-col-1">
+                    <div class="app-logo">
+                        <img src="images/halal.png">
+                    </div>
+                    <h3>100% HALAL</h3>
+                </div>
+                <div class="footer-col-2">
+                    <img src="images/LOGO.png">
+                </div>
+                <div class="footer-col-4">
+                    <h3>follow us</h3>
+                    <ul>
+                        <b>
+                            <li><a href="https://www.facebook.com/rins.kitchen.5?mibextid=JRoKGi">facebook</li></a>
+                            <li><a href="https://instagram.com/rina.sari.73997?igshid=MzMyNGUyNmU2YQ==">Instagram</li>
+                            </a>
+                        </b>
+                    </ul>
+                </div>
+                <p>RIN'S KITCHEN SEJAK TAHUN 2014</p>
+            </div>
+            <hr>
+            <p class="Copyright">Copyright 2023 - RINS KITCHEN</p>
+        </div>
+    </div>
+    <!-- js for toggle menu -->
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+
+        MenuItems.style.maxHeight = "0px";
+
+        function menutoggle() {
+            if (MenuItems.style.maxHeight == "0px") {
+                MenuItems.style.maxHeight = "200px";
+
+            }
+            else {
+                MenuItems.style.maxHeight = "0px";
+
+            }
+        }
+    </script>
+
+
+
+</body>
+
+</html>

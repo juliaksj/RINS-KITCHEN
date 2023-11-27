@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <!-- font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <title>Contact</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <a href="index.html"><img src="images/LOGO.png" width="100px"></a>
+            </div>
+            <nav>
+                <ul id="MenuItems">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="account.html">Account</a></li>
+                </ul>
+            </nav>
+            <a href="cart.html"><img src="images/cart.png" width="30px" height="30px"></a>
+            <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+        </div>
+    </div>
+    <!-- contact -->
+    <div class="contact-form">
+        <h1>Contact</h1>
+        <div class="container">
+            <div class="main">
+                <div class="content">
+                    <h2>Contact</h2>
+                    <form action="https://wa.me/+6287886583889" method="post">
+                        <input type="text" name="name" placeholder="Enter Your Name">
+                        <textarea name="message" placeholder="Your Message"></textarea>
+                        <button class="btn">Send<i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+                <div class="form-img">
+                    <img src="images/LOGO.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <div class="footer">
+        <div class="info">
+            <div class="row-3">
+                <div class="footer-col-1">
+                    <div class="app-logo">
+                        <img src="images/halal.png">
+                    </div>
+                    <h3>100% HALAL</h3>
+                </div>
+                <div class="footer-col-2">
+                    <img src="images/LOGO.png">
+                </div>
+                <div class="footer-col-4">
+                    <h3>follow us</h3>
+                    <ul>
+                        <b>
+                            <li><a href="https://www.facebook.com/rins.kitchen.5?mibextid=JRoKGi">facebook</li></a>
+                            <li><a href="https://instagram.com/rina.sari.73997?igshid=MzMyNGUyNmU2YQ==">Instagram</li>
+                            </a>
+                        </b>
+                    </ul>
+                </div>
+                <p>RIN'S KITCHEN SEJAK TAHUN 2014</p>
+            </div>
+            <hr>
+            <p class="Copyright">Copyright 2023 - RINS KITCHEN</p>
+        </div>
+    </div>
+    <!-- js for toggle menu -->
+    <script>
+        var MenuItems = document.getElementById("MenuItems");
+
+        MenuItems.style.maxHeight = "0px";
+
+        function menutoggle() {
+            if (MenuItems.style.maxHeight == "0px") {
+                MenuItems.style.maxHeight = "200px";
+
+            }
+            else {
+                MenuItems.style.maxHeight = "0px";
+
+            }
+        }
+    </script>
+</body>
+</html>
